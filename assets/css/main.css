@@ -3474,9 +3474,9 @@ input, select, textarea {
 
 			#intro {
 				padding: 3rem 2rem 1rem 2rem ;
-				min-height: 80vh;
+				min-height: 55vh;
 			}
-
+			
 				#intro h1 {
 					font-size: 3.25rem;
 					line-height: 1.1;
@@ -3490,6 +3490,21 @@ input, select, textarea {
 
 				#intro .actions {
 					display: none;
+				}
+				header.major > .date:before, header.major > .date:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+					width: calc(50% - 8rem);
+					border-top: solid 2px;
+				}
+				header.major > .date:before, header.major > .date.feast:after {
+					width: calc(50% - 10rem);
+				}
+				#header {
+					height: 30rem !important;
+					padding-bottom: 4rem;
 				}
 
 		}
